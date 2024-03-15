@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grid {
+    width: 600px;
+    height: 600px;
+    background-color: pink;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square {
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    background-color: cadetblue;
+    border: 2px solid black;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square.even {
+    background-color: red;
+}
+.square.odd {
+    background-color: green;
+}
